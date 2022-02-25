@@ -68,13 +68,13 @@ function myFunction() {
 
     section_createDrop.classList.remove("hidden");
 
-    // header_navBar.style.top = "-70%";
-    // header_navBar.transition = "all .3s";
+    header_navBar.style.top = "-70%";
+    header_navBar.style.transition = "all .3s";
 }
 
 function myFunction_two() {
-    // header_navBar.style.top = "0%";
-    // header_navBar.transition = "all 3s";
+    header_navBar.style.top = "0%";
+    header_navBar.style.transition = "all .3s";
 
     btn_dropDown.classList.remove("hidden");
     setTimeout(timer, 500);
