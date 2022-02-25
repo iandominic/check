@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imgs/logo-activ8ors.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ACTIV8ORS</title>
+</head>
+<body class="bg-background-black font-Orbitron overflow-y-scroll scrollbar-hide scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100 scrollbar-thin">
+
+    <!-- Side Nav -->
+
+    <div class="flex justify-end relative lg:hidden md:hidden mx-auto -right-3/4" id="sideNav">
+        <div class="flex justify-end px-8 w-3/5 z-40 bg-black shadow-lg shadow-black h-screen fixed opacity-95">
+           <div class="flex flex-col fixed text-right text-2xl gap-10">
+               <div class="text-white uppercase mb-20 mt-14 cursor-pointer flex justify-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="close-side-nav" class="h-10 w-10 " viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+               </div>
+                <h1 class="text-white uppercase cursor-pointer"><a href="#home" id="side_home">Home</a></h1>
+                <h1 class="text-white uppercase cursor-pointer"><a href="#services" id="side_services">Services</a></h1>
+                <h1 class="text-white uppercase cursor-pointer"><a href="#nft" id="side_nft">NFT</a></h1>
+                <h1 class="text-white uppercase cursor-pointer"><a href="#roadmap" id="side_roadmap">Roadmap</a></h1>
+           </div>
+        </div>
+    </div>
+
+<div class="flex flex-col" id="main-content">
+    
+    <!-- Header -->
+
+    <header class="w-screen flex justify-center">
+        <nav class="container flex fixed items-center lg:py-14 md:py-14 py-5 bg-background-black" id="top">
+            <ul class="sm:flex flex-1 justify-center items-center text-bookmark-blue uppercase text-xs lg:gap-44 md:gap-32 sm:gap-20">
+                <a href="#home" id="homeNav"><li class="hidden lg:block md:block sm:block cursor-pointer w-7 h-7 bg-white rounded-full hover:scale-150 transition duration-150 ease-in-out"></li></a>
+                <a href="#services" id="servicesNav"><li class="hidden lg:block md:block sm:block cursor-pointer w-7 h-7 bg-white rounded-full hover:scale-150 transition duration-150 ease-in-out"></li></a>
+                <li class="cursor-pointer lg:w-32 lg:h-32 md:w-32 md:h-32 w-28 h-28 animate-pulse"><img src="./imgs/logo-activ8ors.png" alt="logo icon"></li>
+                <a href="#nft" id="nftNav"><li class="hidden lg:block md:block sm:block cursor-pointer w-7 h-7 bg-white rounded-full hover:scale-150 transition duration-150 ease-in-out"></li></a>
+                <a href="#roadmap" id="roadmapNav"><li class="hidden lg:block md:block sm:block cursor-pointer w-7 h-7 bg-white rounded-full hover:scale-150 transition duration-150 ease-in-out"></li></a>
+            </ul>
+            <div class="flex sm:hidden md:hidden lg:hidden flex-1 justify-end text-white cursor-pointer" id="open-side-nav">
+                <i class="text-3xl fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+
+    <div class="overflow-x-hidden scrollbar-hide scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100 scrollbar-thin flex flex-row scroll-smooth h-3/4">
+        <div class="flex flex-col">
+            <section class="h-screen flex flex-col mx-auto px-5 lg:stop md:stop w-screen justify-center" id="home">
+                <div class="container flex flex-col justify-center items-center text-center lg:mt-32 md:mt-32 lg:h-1/4 md:h-1/4 h-3/4">
+                    <h1 class="text-white lg:text-7xl md:text-7xl text-6xl cursor-default uppercase">Home</h1>
+                    <p class="text-white font-extralight text-sm py-11 tracking-wide cursor-default" id="description">What you can expect from us ....</p>
+                    <a href="#create"><button id="btn" type="button" class="button bg-white shadow-md py-5 lg:px-32 md:px-32 px-24 rounded-full transition duration-300"><img src="./imgs/down-arrow-button.png" alt="down arrow" class="w-8 h-8 animate-bounce"></button></a>
+                </div>
+            </section>
+        
+            <!-- Drop Down Section -->
+
+            <section class="container hidden h-screen mx-auto px-5 lg:stop md:stop" id="create">
+                <div class="flex flex-col w-full">
+                    <div data-tilt>
+                        <div class="flex mt-16 mb-32 cursor-pointer flex-col lg:flex-row md:flex-row lg:space-x-10 md:space-x-10 items-center hover:scale-125 transition duration-150 ease-out">
+                            <h1 class="lg:text-8xl md:text-8xl text-5xl text-white">CREA8</h1>
+                            <img src="./imgs/right-alignment-button.png" alt="right align" class="w-14 h-14">
+                        </div>
+                    </div>
+                    <div data-tilt>
+                        <div id="create-scroll" class="flex flex-col lg:flex-row md:flex-row mb-32 lg:space-x-10 md:space-x-10 cursor-pointer items-center hover:scale-125 transition duration-150 ease-out" >
+                            <h1 class="lg:text-8xl md:text-8xl text-5xl text-white">COLLABOR8</h1>
+                            <img src="./imgs/right-alignment-button.png" alt="right align" class="w-14 h-14">
+                        </div>
+                    </div>
+                    <div data-tilt>
+                        <div class="flex flex-col lg:flex-row md:flex-row mb-48 cursor-pointer lg:space-x-10 md:space-x-10 items-center hover:scale-125 transition duration-150 ease-out">
+                            <h1 class="lg:text-8xl md:text-8xl text-5xl text-white ">ACTIV8</h1>
+                            <img src="./imgs/right-alignment-button.png" alt="right align" class="w-14 h-14">
+                        </div>
+                    </div>
+                    <a href="#home"><button id="btn_two" type="button" class="button bg-white shadow-md py-5 lg:px-32 md:px-32 px-24 rounded-full transition duration-300 mb-16 mx-auto flex justify-center items-center"><img src="./imgs/up-arrow-button.png" alt="down arrow" class="w-8 h-8 animate-bounce"></button></a>
+                </div>
+            </section>
+        </div>
+        
+        <div class="flex flex-col">
+            <section class="h-screen flex flex-col mx-auto px-5 lg:stop md:stop w-screen justify-center" id="services">
+                <div class="container flex flex-col justify-center items-center text-center lg:mt-32 md:mt-32 lg:h-1/4 md:h-1/4 h-3/4">
+                    <h1 class="text-white lg:text-7xl md:text-7xl text-6xl cursor-default uppercase">Services</h1>
+                    <p class="text-white font-extralight text-sm py-11 tracking-wide cursor-default" id="description">What you can expect from us ....</p>
+                    <a href="#create"><button id="btn" type="button" class="button bg-white shadow-md py-5 lg:px-32 md:px-32 px-24 rounded-full transition duration-300"><img src="./imgs/down-arrow-button.png" alt="down arrow" class="w-8 h-8 animate-bounce"></button></a>
+                </div>
+            </section>
+        </div>
+
+        <div class="flex flex-col">
+            <section class="h-screen flex flex-col mx-auto px-5 lg:stop md:stop w-screen justify-center" id="nft">
+                <div class="container flex flex-col justify-center items-center text-center lg:mt-32 md:mt-32 lg:h-1/4 md:h-1/4 h-3/4">
+                    <h1 class="text-white lg:text-7xl md:text-7xl text-6xl cursor-default uppercase">NFT</h1>
+                    <p class="text-white font-extralight text-sm py-11 tracking-wide cursor-default" id="description">What you can expect from us ....</p>
+                    <a href="#create"><button id="btn" type="button" class="button bg-white shadow-md py-5 lg:px-32 md:px-32 px-24 rounded-full transition duration-300"><img src="./imgs/down-arrow-button.png" alt="down arrow" class="w-8 h-8 animate-bounce"></button></a>
+                </div>
+            </section>
+        </div>        
+
+        <div class="flex flex-col ">
+            <section class="h-full flex flex-col mx-auto px-5 lg:stop md:stop w-screen justify-center" id="roadmap">
+                <div class="container flex flex-col justify-center items-center text-center lg:mt-32 md:mt-32 lg:h-1/4 md:h-1/4 h-3/4">
+                    <h1 class="text-white lg:text-7xl md:text-7xl text-6xl cursor-default uppercase">Roadmap</h1>
+                    <p class="text-white font-extralight text-sm py-11 tracking-wide cursor-default" id="description">What you can expect from us ....</p>
+                    <a href="#create"><button id="btn" type="button" class="button bg-white shadow-md py-5 lg:px-32 md:px-32 px-24 rounded-full transition duration-300"><img src="./imgs/down-arrow-button.png" alt="down arrow" class="w-8 h-8 animate-bounce"></button></a>
+                </div>
+            </section>
+        </div>    
+    </div>
+</div>
+</body>
+    <script src="./app.js"></script>
+    <script src="./button.js"></script>
+</html>
